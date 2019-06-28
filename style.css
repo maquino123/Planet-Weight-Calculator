@@ -1,18 +1,36 @@
+@font-face {
+    font-family: "space";
+    src: url("fonts/Equinox Regular.woff");
+}
+html{
+  overflow: hidden;
+}
 body{
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 #particles-js{
   height: 100%;
   background: #232741;
 }
+
 h1{
+  font-family: space;
+  font-size: 2em;
+  color: white;
   margin: 0;
-  animation: fadeOut 2s
+  animation: fadeIn 5s;
+  text-shadow: 0 0 10px #ffffff;
+  letter-spacing: 15px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 30%;
 }
 
-@keyframes fadeOut {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
