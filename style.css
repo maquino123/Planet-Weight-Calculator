@@ -9,5 +9,15 @@ body{
 }
 h1{
   margin: 0;
-  
+  animation: fadeOut 2s
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
