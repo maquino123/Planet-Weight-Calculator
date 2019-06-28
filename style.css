@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#particles-js{
+  height: 100%;
+  background: #232741;
+}
+h1{
+  margin: 0;
+  
+}
