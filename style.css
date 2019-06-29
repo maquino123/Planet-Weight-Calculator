@@ -46,6 +46,43 @@ body{
   top: 50%;
   left: 13%;
 }
+#input{
+    position: absolute;
+    left: 43%;
+    top: 60%;
+    border-radius: 5%;
+}
+input[name=weight-input]{
+  font-family: space;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: white;
+}
+
+#inspiration{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: space;
+  color: white;
+  padding-left: 1em;
+}
+
+#author{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: space;
+  color: white;
+  padding-right: 1em;
+
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
 
 @keyframes fadeIn {
   from {
