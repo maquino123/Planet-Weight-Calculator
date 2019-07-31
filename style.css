@@ -12,38 +12,32 @@ html{
 body{
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 #particles-js{
   margin: 0;
   padding: 0;
   background: black;
-  position: relative;
+  height: 100%;
 }
 
 #title{
   font-family: space;
-  font-size: 3em;
+  font-size: 2vw;
   color: white;
   animation: fadeIn 5s;
   text-shadow: 0 0 10px #ffffff;
   letter-spacing: 15px;
   text-align: center;
   margin: 0;
-}
-
-#title_container{
   position: absolute;
   top: 40%;
-  left: 20%;
+  width: 100%;
 }
 
 #description_container{
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  padding: 0;
-  margin: 0;
+
 }
 
 .description{
@@ -54,18 +48,11 @@ body{
   font-size: 1em;
   letter-spacing: 5px;
   color: white;
-
-  margin: 0;
+  line-height: normal;
 }
 
 #input{
-  display: block;
-  margin: auto;
-  position: absolute;
-  width: 50%;
-  top: 60%;
-  left: 43%;
-  border-radius: 5%;
+
 }
 
 input[name=weight-input]{
@@ -78,32 +65,30 @@ input[name=weight-input]{
   box-shadow: 0 0 10px #ffffff;
 }
 
+#submit_button{
+  font-family: space;
+}
+
+#submit_container{
+
+}
+
 #inspiration{
-  position: absolute;
-  bottom: 7%;
-  left: 0;
+
   font-family: space;
   color: white;
-  padding-left: 1em;
+  padding: 1em;
 }
 
 #author{
-  position: absolute;
-  right: 0;
-  bottom: 7%;
   font-family: space;
   color: white;
-  padding-right: 1em;
-
+  padding: 1em;
 }
 
 .link{
   color: #4c46ff;
   text-decoration: none;
-}
-
-footer{
-
 }
 
 @keyframes fadeIn {
