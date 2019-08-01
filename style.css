@@ -18,7 +18,7 @@ body{
 #particles-js{
   margin: 0;
   padding: 0;
-  background: black;
+  background: #131010;
   height: 100%;
 }
 
@@ -32,23 +32,39 @@ body{
   text-align: center;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 30%;
   width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
 }
 
-#description_container{
-
-}
-
-.description{
+#description{
   animation: fadeIn 5s;
   text-shadow: 0 0 10px #ffffff;
   text-align: center;
   font-family: space;
-  font-size: 1em;
+  font-size: 2vh;
   letter-spacing: 5px;
   color: white;
   line-height: normal;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+#inspiration{
+  font-family: space;
+  color: white;
+  padding: 1em;
+}
+
+#author{
+  font-family: space;
+  color: white;
+  padding: 1em;
 }
 
 #input{
@@ -65,25 +81,8 @@ input[name=weight-input]{
   box-shadow: 0 0 10px #ffffff;
 }
 
-#submit_button{
+#submit{
   font-family: space;
-}
-
-#submit_container{
-
-}
-
-#inspiration{
-
-  font-family: space;
-  color: white;
-  padding: 1em;
-}
-
-#author{
-  font-family: space;
-  color: white;
-  padding: 1em;
 }
 
 .link{
