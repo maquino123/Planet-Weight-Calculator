@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "space";
+    src: url("fonts/Equinox Regular.woff");
+}
+
+html{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#particles-js{
+  margin: 0;
+  padding: 0;
+  background: #192231;
+  height: 100%;
+}
+
+.title{
+  font-family: space;
+  color: white;
+  letter-spacing: 5px;
+
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.description{
+  font-family: space;
+  color: white;
+
+  line-height: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.link{
+  font-family: space;
+  color: #98878f;
+  text-decoration: none;
+}
+
+.inspiration{
+  font-family: space;
+  color: #FFF0F5;
+
+  position: absolute;
+  top: 95%;
+  left: 1%;
+}
+
+.author{
+  font-family: space;
+  color: #FFF0F5;
+
+  position: absolute;
+  top: 95%;
+  left: 81%;
+}
+
+.input{
+  position: absolute;
+  top: 62%;
+  left: 5%;
+}
+
+.submit{
+  font-family: space;
+
+  position: absolute;
+  top: 62%;
+  left: 19%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

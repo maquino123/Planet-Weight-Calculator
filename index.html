@@ -6,51 +6,42 @@
   <meta charset="UTF-8"> <!-- tag that defines information about the file (Character set)-->
   <meta name="description" content="Calculate your weight on other planets!"> <!-- defines metadata about the file -->
   <title>Planet Weight Calculator</title> <!-- Title of the website -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Icon for website -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <!--meat and bones of html page-->
+  <!--divs are block which take up the entire width of the page (goes to next line)-->
+  <!--spans are in-line which take up as much space as they need (can sit next to each other)-->
   <div id="particles-js">
-    <div id="title">
+    <div class="title">
       <h1>PLANET WEIGHT CALCULATOR</h1>
     </div>
 
-    <div id="description">
-      <h3>Ever wondered how much you would weigh on other planets? Well here's your chance to find out!</h3>
-      <p>Simply enter your weight on Earth (in any unit of your choice) and choose a planet</p>
+    <div class="description">
+      <p>Ever wondered how much you would weigh on other planets? Well here's your chance to find out!</p>
+      <p>Simply enter your weight on Earth (in any unit of your choice) and click the button!</p>
     </div>
 
-    <div id="inspiration">
+    <div class="inspiration">
       <p>inspired by the <a target="_blank" class="link" href="https://www.exploratorium.edu/ronh/weight/">Exploratorium</a> website </p>
     </div>
 
-    <div id="author">
+    <div class="author">
       <p>Created by <a target="_blank" class="link" href="https://github.com/maquino123"> Marlon Aquino </a></p>
     </div>
 
-    <div id="input">
+    <div class="input">
       <form action="index.html" method="post">
         <input type="number" name="weight-input">
       </form>
     </div>
 
     <div>
-      <button id="submit" type="button"> Let's Go! </button>
+      <button onclick="location.href='planets.html';" class="submit" type="button"> Let's Go! </button>
     </div>
-
-    <select>
-      <option value="venus">Venus</option>
-      <option value="earth">Earth</option>
-      <option value="mars">Mars</option>
-      <option value="jupiter">Jupiter</option>
-      <option value="saturn">Saturn</option>
-      <option value="uranus">Uranus</option>
-      <option value="neptune">Neptune</option>
-    </select>
-
 
   </div>
 
