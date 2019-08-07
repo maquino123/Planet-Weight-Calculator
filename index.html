@@ -17,6 +17,7 @@
   <!--divs are block which take up the entire width of the page (goes to next line)-->
   <!--spans are in-line which take up as much space as they need (can sit next to each other)-->
   <div id="particles-js">
+    <div class="header-flex-container">
     <div class="title">
       <h1>PLANET WEIGHT CALCULATOR</h1>
     </div>
@@ -26,30 +27,30 @@
       <p>Simply enter your weight on Earth (in any unit of your choice) and click the button!</p>
     </div>
 
-    <div class="inspiration">
-      <p>inspired by the <a target="_blank" class="link" href="https://www.exploratorium.edu/ronh/weight/">Exploratorium</a> website </p>
-    </div>
+    <div class="input-flex-container">
+      <div class="input">
+        <form action="index.html" method="post">
+          <input type="number" name="weight-input">
+        </form>
+      </div>
 
-    <div class="author">
-      <p>Created by <a target="_blank" class="link" href="https://github.com/maquino123"> Marlon Aquino </a></p>
-    </div>
-
-    <div class="input">
-      <form action="index.html" method="post">
-        <input type="number" name="weight-input">
-      </form>
-    </div>
-
-    <div>
       <button onclick="location.href='planets.html';" class="submit" type="button"> Let's Go! </button>
     </div>
-
   </div>
 
+    <div class="credits-flex-container">
+      <div class="inspiration">
+        <p>inspired by the <a target="_blank" class="link" href="https://www.exploratorium.edu/ronh/weight/">Exploratorium</a> website </p>
+      </div>
 
-  <script type="text/javascript" src="particles.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+      <div class="author">
+        <p>Created by <a target="_blank" class="link" href="https://github.com/maquino123"> Marlon Aquino </a></p>
+      </div>
+    </div>
 
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </div>
 </body>
 
 </html>
