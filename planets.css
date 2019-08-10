@@ -3,133 +3,175 @@
   src: url("fonts/Equinox Regular.woff");
 }
 
-body, html{
+body, html {
   padding: 0;
   margin: 0;
   height: 100vh;
   overflow: hidden;
-
   background-color: #192231;
 }
 
-ul#planets-list{
-}
+ul#planets-list {}
 
-ul#planets-list li{
+ul#planets-list li {
   display: inline-block;
   font-family: "space";
   color: white;
   margin-right: 40px;
 }
 
-ul#planets-list li:hover{
+ul#planets-list li:hover {
   color: blue;
   cursor: pointer;
 }
 
-.planets-flex-container{
-
+.planets-flex-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
   height: 100%;
-
 }
 
-.planets-shapes{
+.planets-shapes {
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
 }
 
-ul#planets-shapes{
+ul#planets-shapes {
   list-style: none;
+  margin-bottom: 50px;
 }
 
-ul#planets-shapes li{
-    margin-right: 45px;
+ul#planets-shapes li {
+  margin-right: 45px;
   display: inline-block;
 }
 
-.sun{
+.sun {
   border-radius: 100%;
   background: #FFAF01;
   width: 150px;
   height: 150px;
-
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-.mercury{
+.mercury {
   background: #76777A;
   border-radius: 100%;
   height: 40px;
   width: 40px;
   box-shadow: inset -3px -3px #67686b;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 100ms;
 }
 
-
-.venus{
+.venus {
   background: linear-gradient(#e5875f 5px, #c2643c 15px, #D1734B 25px, #ea8c64 40px, #c76941 45px);
   border-radius: 100%;
   height: 55px;
   width: 55px;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 200ms;
 }
 
-
-.earth{
+.earth {
   background: #496282;
   box-shadow: inset -3px -3px #3a5373;
   height: 50px;
   width: 50px;
   border-radius: 100%;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 300ms;
 }
 
-.mars{
+.mars {
   background: #C25447;
   height: 42px;
   width: 42px;
   border-radius: 100%;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 400ms;
 }
 
-.jupiter{
+.jupiter {
   background: #E89150;
   box-shadow: 0px 0px 0px 0px;
   height: 80px;
   width: 80px;
   border-radius: 100%;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 500ms;
 }
 
-.saturn{
+.saturn {
   background: #D1AA5E;
   border-radius: 100%;
   box-shadow: inset -3px -3px #b89145;
   height: 65px;
   width: 65px;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 600ms;
 }
 
-.uranus{
+.uranus {
   background: #9DB1BF;
   border-radius: 100%;
   box-shadow: inset -3px -3px #8498a6;
   height: 67px;
   width: 67px;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 700ms;
 }
 
-.neptune{
+.neptune {
   background: #5870A8;
   border-radius: 100%;
   box-shadow: inset -3px -3px #3F578F;
   height: 60px;
   width: 60px;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 800ms;
 }
 
-.pluto{
+.pluto {
   background: #805F47;
   border-radius: 100%;
   box-shadow: inset -3px -3px #715038;
   height: 30px;
   width: 30px;
+  animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 900ms;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 50px, 0);
+  }
 }
